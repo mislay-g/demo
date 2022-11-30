@@ -1,0 +1,28 @@
+db:
+  debug: true
+  dsn: "root:1234@tcp(localhost:3306)/demo?charset=utf8mb4&parseTime=True&loc=Local&allowNativePasswords=true"
+  maxLifetime: 1000
+  maxOpenConns: 100
+  maxIdleConns: 100
+  tablePrefix: ""
+
+redis:
+  address: localhost:6379
+  username: ""
+  password: ""
+  db: 0
+
+log:
+  level: debug
+  filename: "test.log"
+  maxsize: 10
+  maxage: 30
+  maxbackups: 5
+
+server:
+  host: 127.0.0.1
+  port: 8080
+  mode: debug
+  readTimeout: 30
+  writeTimeout: 30
+  idleTimeout: 30
